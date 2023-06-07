@@ -1,2 +1,0 @@
-# mychatbot-landing
-# mychatbot-landing
