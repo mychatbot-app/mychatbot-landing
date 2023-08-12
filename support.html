@@ -7,6 +7,25 @@
         <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
           <link href="images/webclip.png" rel="apple-touch-icon">
         <style>*{margin:0;padding:0;} html,body,iframe{border-radius:0 !important;}</style>
+          <script>
+    const getQueryParam = (name) => {
+        let results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        if (results == null) {
+            return null;
+        } else {
+            return decodeURIComponent(results[1]) || 0;
+        }
+    };
+
+    let accountValue = getQueryParam("account");
+
+    if (accountValue !== null) {
+        let firstDiv = document.querySelector("body > div");
+        if (firstDiv) {
+            firstDiv.setAttribute("data-tf-account", accountValue);
+        }
+    }
+          </script>
       </head>
       <body>
         <div data-tf-widget="wlE2o9Oc" data-tf-opacity="100" data-tf-inline-on-mobile data-tf-iframe-props="title=Support" data-tf-transitive-search-params data-tf-auto-focus data-tf-medium="snippet" data-tf-full-screen></div><script src="//embed.typeform.com/next/embed.js"></script>
