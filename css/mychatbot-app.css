@@ -2519,7 +2519,7 @@ body {
   }
 
   .empower-your-business {
-    margin-top: 368px;
+    margin-top: 140px;
     display: block;
   }
 
@@ -3211,8 +3211,8 @@ body {
   .faq-section {
     background-position: 100% 0;
     background-size: auto;
-    margin-top: -54px;
-    padding-top: 64px;
+    margin-top: -23px;
+    padding-top: 27px;
     font-family: Gilroy, sans-serif;
   }
 
@@ -3258,6 +3258,7 @@ body {
     margin-right: auto;
     padding-top: 0;
     display: block;
+    margin-top: 45px;
   }
 
   .text-9 {
@@ -3416,4 +3417,21 @@ body {
   font-weight: 500;
   font-style: normal;
   font-display: swap;
+}
+
+.pricing-container {
+  display: flex;
+  width:100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.beginner, .standard, .professional {
+  margin: 10px;
+  border-radius: 30px;
+  max-width: 400px;
+  box-shadow: 0 3px 20px 13px rgba(0, 0, 0, .06);
+}
+
+@media screen and (max-width: 991px) {
 }
